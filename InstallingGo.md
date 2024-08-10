@@ -21,3 +21,8 @@ The pkg directory stores compiled package object files (.a files) generated duri
 These package object files are intermediate artifacts representing precompiled versions of your packages. They are stored in a directory structure that reflects the target architecture and operating system.
 This directory is created to speed up the build process by avoiding the recompilation of unchanged packages. It helps in achieving parallel builds and reduces rebuild times.
 
+- bin Directory
+  
+The bin directory is where the compiled executable binaries are placed after the `go install` command is executed.
+When you build a Go program, the resulting executable is placed in the bin directory, with its name being the same as the last element of the import path.
+For example, if your project is located at github.com/yourusername/yourproject and you run go install, the resulting executable will be in the bin directory as yourproject.
