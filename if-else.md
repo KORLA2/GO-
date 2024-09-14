@@ -14,3 +14,16 @@ fmt.Println("Not Equal")
 }
 
 ```
+
+Go Only supports for loop .
+
+### Syntax of for loop
+
+```
+for i:=0;i<2;++i{
+fmt.Println(i);
+}
+```
+
+
+
