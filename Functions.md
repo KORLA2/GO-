@@ -23,7 +23,7 @@ fmt.Prinft(x,y,z);
 
 ```
 func main(){
- x,y=myfunction("hello",6.8,34)
+ x,y:=myfunction("hello",6.8,34)
 }
 
 func myfunction(x string,y float64,z) (string,float64){ // We have to specify what we are returning to the right side of the function definition
@@ -34,7 +34,7 @@ return x,y
 ##  Alternative way of returning
 ```
 func main(){
- x,y=myfunction()
+ x,y:=myfunction()
 }
 
 func myfunction() (x string,y float64){   // By  Mentioning variable names here Go creates x,y variables redeclaring in function throws error .
