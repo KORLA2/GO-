@@ -13,8 +13,8 @@ else if x=="Hello"{
 fmt.Println("Not Equal")
 }
 
-```
 Scope limited 
+```
 if x:="Hello"; x=="Hello"{
 fmt.Println("Equal")
 }
