@@ -8,3 +8,5 @@ There are several reasons for this, but one of them is that Java uses a virtual 
 
 On the other hand, Rust and C programs use slightly less memory than Go programs because more control is given to the developer to optimize the memory usage of the program. 
 The Go runtime just handles it for us automatically.
+
+Go is a bit slower mostly due to its automated memory management, also known as the "Go runtime". Slightly slower speed is the price we pay for memory safety and simple syntax!
