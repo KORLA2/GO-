@@ -1,6 +1,6 @@
 Go is static typed ( All variables / functions must be declared before using ) compiled language which means source code is complied to machine code before execution.
 
-
+Image from boot.dev Course
 ![image](https://github.com/user-attachments/assets/ebed572e-58a9-4477-a9b9-97ea91efad73)
 
 ## Advantages of Go
