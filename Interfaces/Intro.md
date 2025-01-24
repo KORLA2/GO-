@@ -7,7 +7,7 @@ type Movie interface {
       Story() bool
       Sentiment() bool
   }
-    
+A type satisfies an interface if it implements all the methods defined in the interface. There's no need to explicitly declare that a type implements an interface
     type KGF struct {
     hero string 
     }
@@ -31,5 +31,18 @@ type Movie interface {
         return true;
         
         }
-
 ```
+
+// Interfaces can hold any value that implements the methods required by the interface.
+
+func main(){
+
+k:=KGF{hero:"Yash"}
+var m Movie=k  
+fmt.Print(m.Story());
+
+}
+```
+
+
+
