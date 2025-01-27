@@ -34,11 +34,11 @@ A type satisfies an interface if it implements all the methods defined in the in
 ```
 
 // Interfaces can hold any value that implements the methods required by the interface.
-
+```
 func main(){
 
 k:=KGF{hero:"Yash"}
-var m Movie=k  
+var m Movie=k // Correct as type KGF implements Movie  
 fmt.Print(m.Story());
 
 }
