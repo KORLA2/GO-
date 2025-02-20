@@ -45,6 +45,41 @@ return; // We can simply write return here without specifying, Go looks what we 
 ```
 
 
+# Functions are just like values 
+
+Functions are values too. They can be passed around just like other values.
+
+Function values may be used as function arguments and return values.
+
+```
+
+func movie(st func(string)(string))(string){   // This movie function calls story function, if sentiment was yes then story return HIT and movie returns  Block Buster Movie
+                                               // if any other parameter was passed as sentiment then stroy returns FLOP and movie returns FLOP Movie   
+
+ if st("yes")=="HIT"{       
+  return "Block Buster Movie"
+ }
+
+return "FLOP Movie" 
+}
+
+func main() {
+
+
+ story:=func(sentiment string )(string){ // If a story has sentiment then this story function  returns HIT else FLOP 
+
+     if sentiment=="yes" {  
+      return "HIT"
+     }
+
+     return "FLOP"
+
+   }
+
+fmt.Print(movie(story))   // story function is passed to movie function. 
+
+}
+```
 
 
 
