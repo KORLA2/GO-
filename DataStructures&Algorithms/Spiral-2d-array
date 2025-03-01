@@ -1,0 +1,72 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	spiral := make([][]int, 3)
+	cnt := 0
+	for i := range len(spiral) {
+
+		spiral[i] = make([]int, 3)
+
+		for j := range len(spiral[0]) {
+
+			spiral[i][j] = cnt
+			cnt++
+
+		}
+
+	}
+
+	//spiral
+
+	t, b, l, r := 0, len(spiral)-1, 0, len(spiral[0])-1
+
+	for t <= b && l <= r {
+
+		i := l
+
+		for i <= r {
+
+			fmt.Printf("%2d", spiral[t][i])
+			i++
+
+		}
+		t++
+		fmt.Println("")
+		i = t
+		for i <= b {
+
+			fmt.Printf("%2d", spiral[i][r])
+
+			i++
+		}
+		fmt.Println("")
+
+		r--
+
+		i = r
+
+		for i >= l {
+
+			fmt.Printf("%2d", spiral[b][i])
+
+			i--
+		}
+		fmt.Println("")
+
+		b--
+		i = b
+
+		for i >= t {
+
+			fmt.Printf("%2d", spiral[i][l])
+			i--
+		}
+		fmt.Println("")
+
+		l++
+	}
+
+}
