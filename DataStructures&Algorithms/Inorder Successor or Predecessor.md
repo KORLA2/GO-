@@ -11,7 +11,7 @@
    right*node
   
   }
-
+```
 ```
    func min_in_right_sub_tree(root *node) int {
     	min := 0
@@ -60,7 +60,7 @@
   	}
   
   }
-
+```
 ```
     func main(){
   /*
