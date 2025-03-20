@@ -18,7 +18,7 @@ func main() {
 
 	slices.Sort(slice) // Sorting in ascending order
 
-   // Sorting in ascending order
+   // Sorting in descending order
 	slices.SortFunc(slice, func(x, y int) int {
 		if x < y {
 			return 1
